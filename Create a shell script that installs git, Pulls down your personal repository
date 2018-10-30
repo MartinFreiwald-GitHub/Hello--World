@@ -1,0 +1,11 @@
+    #  sudo apt-get install git
+    #  git config --global user.name "MartinFreiwald-GitHub"
+    #  git config --global user.email "MartinFreiwald@yahoo.com"
+    #  mkdir /home/martinfreiwald708/Personal-Repo-Site/
+    #  cd /home/martinfreiwald708/Personal-Repo-Site/
+    #  pwd
+    #  git init
+    #  git remote add origin https://github.com/MartinFreiwald-GitHub/Personal-Repo-Site.git
+            #no need to echo a message into a file.  Then add the file to the repository.  Or finally commit the file to 
+            #repository for this assignment#
+    
