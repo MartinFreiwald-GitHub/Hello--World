@@ -1,0 +1,8 @@
+# sudo su
+# vim helloworld
+# #!/usr/bin/python3.6 #
+# print("Hello, World!!!") #
+# chmod +x helloworld
+# ./helloworld
+
+
