@@ -6,3 +6,25 @@
 # ./helloworld
 
 
+1) What is regex and when would we use it in a script?
+   A Basic Regular Expression engine that comes with Java, python, Perl along wtih Linux operating system programs such as grep, Sed & 
+   Awk.  Provides the expression as given in a statement message using one of the program languges or Linux programs such as Sed.  We can use 
+   regex in a script to repeat a message from a string statement.  If you would use a loop program in our script to direct a string statement 
+   as the output to another editor or to a GUI graphical user interface. 
+   
+2) What is a for loop?
+   A For loop will loop through a number of writen for statements that are strings on each line of the for loop program.  If any of the string values
+   are matched by the input to the for loop.  The program that uses the for loop will use the matched string from the for loop.  Then carry out 
+   the rest of the program.
+   
+3) What is a while loop?
+   While loop has a condition that is where the statement of values must be met.  For the condtion that is stated.  If the conditon of the while 
+   loop is not met and so it is say false.  Then the loop stops.  The loop uses the condition that is given by the programer to decide if a value is 
+   met then it is true.  If a value is not met it is false.  The body of the block that is below the condtion.  Will state values that if true from 
+   the condition will add the block values to the true condition and loop those while. New data can enter the condition stage.  If the condition of 
+   the new data is true.  It will be added to the blocks current data values and looped.  Untill the false condition is met.  
+   
+4) What is an 'if' statement?
+   "if" statement evaluates the test expression inside the parnethesis.  Any statement(s) within the parnethesis that are matched.  Will executed 
+    as the standard output or standard input from the programs use of the if statement to toggel additonal messageing for the matched values.
+    Can be used for error messaging when programming to do so.
