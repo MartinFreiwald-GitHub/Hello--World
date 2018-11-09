@@ -1,0 +1,18 @@
+# #!/usr/bin/python
+# import os
+# def setup_install():
+#   print('installing pip and virtualenv so we can give django its own version of python ')
+#   os.system('yum -y install python-pip')
+#   os.system('source /opt/django/django-env/bin/activate && install django')
+#   os.chdir('/opt')
+#   os.mkdir('/opt/django')
+#   os.chdir('/opt/django')
+#   os.system('source /opt/django/django-evn/bin/activate')
+#              '&& django-admin --version ' + \
+#               ' && django-admin startprojet project1
+#  def django_start():
+#   print('starting django')
+#   os.system('sudo -u martinfreiwald708 sh -c "source /opt/django/django/bin/activate && pytin manage.py runserver 0.0.0.0:8000&"')
+# setup_install()
+# django_install()
+# django_start()
