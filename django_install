@@ -17,7 +17,7 @@
 #               ' && django-admin startprojet project1
 #  def django_start():
 #   print('starting django')
-#   os.system('sudo -u martinfreiwald708 sh -c "source /opt/django/django/bin/activate && pytin manage.py runserver 0.0.0.0:8000&"')
+#   os.system('sudo -u martinfreiwald708 sh -c "source /opt/django/django/bin/activate && python manage.py runserver 0.0.0.0:8000&"')
 # setup_install()
 # django_install()
 # django_start()
