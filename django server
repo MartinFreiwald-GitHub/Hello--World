@@ -28,8 +28,8 @@
     #  source django/bin/activate
    
     #  source /opt/django/django/bin/activate
-    #  /opt/django/project1/manage.py runserver 0.0.0.0:8000&
-        #see note from Nicole#
+    #  sudo -u martinfreiwald708 sh -c " source /opt/django/project1/manage.py runserver 0.0.0.0:8000&"
+      
     #  grep -ir ALLOWED /opt/django/project1
     
     #  vim /opt/django/project1/project1/settings.py
