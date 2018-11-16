@@ -25,7 +25,6 @@ instances = list_instances(compute, project, zone)
 pprint.pprint(newinstance)
 pprint.pprint(instances)
 
-------------------------------------------------------------------------
 
 def create_instance(compute, project, zone, name):
     startup_script = open('startup-script.sh', 'r').read()
