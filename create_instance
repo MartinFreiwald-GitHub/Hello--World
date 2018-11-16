@@ -1,0 +1,89 @@
+#!usr/bin/python
+
+from oauth2client.client import GoogleCredentials
+from googleapiclient import discovery
+import pprint
+import json
+import creat_ldap
+from create_ldap import create_instance
+
+credentials = GoogleCredentials.get_application_default()
+compute = discovery.build('compute', 'v1', credentials=credentials)
+
+project = 'workgroup-1071'
+zone = 'us-east1-b'
+
+name = 'test3'
+
+def list_instances(compute, project, zone):
+    result = compute.instance().list(project=project, zone=zone).excute()
+    return result['items']
+    
+newinstance = create_instance(compute, project, zone, name)
+instances = list_instances(compute, project, zone)
+
+pprint.pprint(newinstance)
+pprint.pprint(instances)
+
+------------------------------------------------------------------------
+
+def create_instance(compute, project, zone, name):
+    startup_script = open('startup-script.sh', 'r').read()
+    image_response = compute.images().getFromFamily(
+     project='centos-cloud', family='centos-7').execute()
+     
+     source_disk_image = image_response['selfLink']
+     machine_type = "zones/%s/machineTypes/f1-micro" % zone
+     
+     config = {
+         'name': name,
+         'machineType': machine_type,
+         
+         'disks': [
+             {
+                 'boot': True,
+                 'autoDelete': True,
+                 'initializeParams': {
+                     'sourceImage': source_disk_image,
+                 }
+         }
+    },
+    
+     'networkInterfaces': [{
+            'network': 'global/networks/default',
+            'accessConfigs': [
+                {'type': 'ONE_TO_ONE_NAT', 'name': 'External NAT'}
+            ]
+        }],
+  
+        "labels": {
+        "http-server": "",
+        "https-server": ""
+        }, 
+        
+        "tags": {
+        "items": [
+        "https-server"
+        ]
+        },
+        
+        'metadata': {
+             'items': [{
+             'key': 'startup-script',
+             'value': startup_script
+          }]   
+       }
+    }  
+      
+    return compute.instances().insert(
+        projest=project,
+        zone=zone,
+        body=config).execute()
+        
+newinstance = create_instance(compute, project, zone, name)
+instances = list_instances(compute, project, zone)
+
+pprint.pprint(newinstance)
+pprint.pprint(instances)     
+        
+      
