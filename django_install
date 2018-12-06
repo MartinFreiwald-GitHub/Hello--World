@@ -1,37 +1,6 @@
 # sudo su
 # vim django_install
 
-
-
-# #!/usr/bin/python
-# import os
-# def setup_install():
-#   print('installing pip and virtualenv so we can give django its own version of python ')
-#   os.system('yum -y install python-pip')
-#   os.system('source /opt/django/django-env/bin/activate && install django')
-#   os.chdir('/opt')
-#   os.mkdir('/opt/django')
-#   os.chdir('/opt/django')
-#   os.system('source /opt/django/django-evn/bin/activate')
-#              '&& django-admin --version ' + \
-#               ' && django-admin startprojet project1
-#  def django_start():
-#   print('starting django')
-#   os.system('sudo -u martinfreiwald708 sh -c "source /opt/django/django/bin/activate && python manage.py runserver 0.0.0.0:8000&"')
-# setup_install()
-# django_install()
-# django_start()
-
-# Esc + :wq!  #
-
-# exit the vim editor toggel on your internet browser select the Google Cloud instance you wrote your django install in and click on the #
-# external IP address and up comes your browser remove the "s"  in https to now http:yourcurrentaddress add the colon at the end of the #
-# address character then type 8000 for the port nubmer.  Highligtht the browsers new address and port and hit enter. use the go back button#
-# in the browser header control bar above to go back to old address and then press the forward arrow in the same control bar to toggle on #
-# Your Django install on port 8000 of your external ip address in the google clound instance. #
-
-# Install this script to the google instance here with vim /usr/bin/python in the directory /usr/bin/python #
-
 # !/usr/bin/python
 # import os
 
@@ -58,10 +27,20 @@
 # def django_start():
     # print('starting django')
     # os.system("myip=$(curl -s checkip.dyndns.org | sed -e 's/.*Current IP Address: //' -e 's/<. *$//') && sed -i \"s/ALLOWED_HOSTS = \[\]/ALLOWED_HOSTS = /[\ '$MYIP\' \]/G\ " /opt/django/project1/project1/settings.py")
-    # os.system('sudo -u martinfreiwald708 .sh -c "/opt/django/django-env/bin/activate && python manage.py runserver 0.0.0.0:8000&"')
+    # os.system('sudo -u martinfreiwald708 sh -c "/opt/django/django-env/bin/activate && python manage.py runserver 0.0.0.0:8000&"')
 
 # setup_install()
 # django_install()
 # django_start()
 
-# done #
+# Esc + :wq!  #
+
+# exit the vim editor toggel on your internet browser select the Google Cloud instance you wrote your django install in and click on the #
+# external IP address and up comes your browser remove the "s"  in https to now http:yourcurrentaddress add the colon at the end of the #
+# address character then type 8000 for the port nubmer.  Highligtht the browsers new address and port and hit enter. use the go back button#
+# in the browser header control bar above to go back to old address and then press the forward arrow in the same control bar to toggle on #
+# Your Django install on port 8000 of your external ip address in the google clound instance. #
+
+# Install this script to the google instance here with vim /usr/bin/python in the directory /usr/bin/python #
+
+
